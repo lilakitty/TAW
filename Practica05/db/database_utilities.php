@@ -108,11 +108,14 @@ function getAll($t){
 	}
 
 	//funcion que busca un jugador
+
 	function search($id){
 		global $pdo;
-		$stmt = $pdo->prepare("SELECT * FROM sport_team where id = '$id'");
-		$stmt->execute();
-		return $r = $stmt->fetchAll();
+
+		$sql = $pdo->prepare("SELECT * FROM sport_team where id=:id");
+		$sql->bindParam(':id',$id);
+		$sql->execute();
+		return $sql->fetch(PDO::FETCH_ASSOC);
 	}
 
 
