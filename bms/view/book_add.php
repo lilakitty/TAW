@@ -14,21 +14,26 @@
 	<form method="post">
 		<fieldset>
 			<legend>Book Add Form</legend>
+			<div class="col-md-2">
+			<div class="form-group">
 			<label for="title">Title</label>
-			<input type="text" name="title" id="title" value="<?php echo $_REQUEST["title"]; ?>">
+			<input class="form-control" type="text" name="title" id="title" value="<?php echo $_REQUEST["title"]; ?>">
 			<font color="red"><?php echo $errors["title"]; ?></font>
-			<br>
+			</div>
+			<div class="form-group">
 			<label for="author">Author</label>
-			<input type="text" name="author" id="author" value="<?php echo $_REQUEST["author"]; ?>">
+			<input class="form-control" type="text" name="author" id="author" value="<?php echo $_REQUEST["author"]; ?>">
 			<font color="red"><?php echo $errors["author"]; ?></font>
-			<br>
+			</div>
+			<div class="form-group">
 			<label for="description">Description</label>
-			<input type="description" name="description" id="description" value="<?php echo $_REQUEST["description"]; ?>">
+			<input class="form-control" type="description" name="description" id="description" value="<?php echo $_REQUEST["description"]; ?>">
 			<font color="red"><?php echo $errors["description"]; ?></font>
-			<br>
-			<input type="hidden" name="page" value="book_add">
-			<input type="hidden" name="caller" value="self">
-			<input type="submit" value="Save">
+			</div>
+			<input class="form-control" type="hidden" name="page" value="book_add">
+			<input class="form-control" type="hidden" name="caller" value="self">
+			<input class="btn btn-dark" type="submit" value="Save">
+		</div>
 		</fieldset>
 	</form>
 <?php

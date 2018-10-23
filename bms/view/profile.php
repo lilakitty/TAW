@@ -14,23 +14,28 @@
 	<form method="post">
 		<fieldset>
 			<legend>Profile Update Form</legend>
+			<div class="col-md-2">
+			<div class="form-group">
 			<label for="name">Name</label>
-			<input type="text" name="name" id="name" value="<?php echo $profile[0]["name"]; ?>">
+			<input class="form-control" type="text" name="name" id="name" value="<?php echo $profile[0]["name"]; ?>">
 			<font color="red"><?php echo $errors["name"]; ?></font>
-			<br>
+			</div>
+			<div class="form-group">
 			<label for="username">Username</label>
-			<input type="text" name="username" id="username" value="<?php echo $profile[0]["username"]; ?>" readonly="true">
+			<input class="form-control" type="text" name="username" id="username" value="<?php echo $profile[0]["username"]; ?>" readonly="true">
 			<font color="red"><?php echo $errors["username"]; ?></font>
-			<br>
+			</div>
+			<div class="form-group">
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password">
+			<input class="form-control" type="password" name="password" id="password">
 			<font color="red"><?php echo $errors["password"]; ?></font>
-			<br>
+			</div>
 			[Fill up only if you want to change it]
 			<br>
-			<input type="hidden" name="page" value="profile">
-			<input type="hidden" name="caller" value="self">
-			<input type="submit" value="Update">
+			<input class="form-control" type="hidden" name="page" value="profile">
+			<input class="form-control" type="hidden" name="caller" value="self">
+			<input class="btn btn-dark" type="submit" value="Update">
+		</div>
 		</fieldset>
 	</form>
 <?php

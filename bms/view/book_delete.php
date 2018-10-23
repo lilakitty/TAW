@@ -14,17 +14,20 @@
 	<form method="post">
 		<fieldset>
 			<legend>Book Delete Form</legend>
+			<div class="col-md-2">
+			<div class="form-group">
 			<label for="title">Do you really want to delete book <?php echo $book[0]["title"]; ?>?</label>
 			<br>
-			<select name="choice">
+			<select class="form-control" name="choice">
 				<option value="yes">Yes</option>
 				<option value="no" selected>No</option>
 			</select>
-			<br>
-			<input type="hidden" name="page" value="book_delete">
-			<input type="hidden" name="caller" value="self">
-			<input type="hidden" name="id" value="<?php echo $book[0]["id"]; ?>">
-			<input type="submit" value="Delete">
+			</div>
+			<input class="form-control" type="hidden" name="page" value="book_delete">
+			<input class="form-control" type="hidden" name="caller" value="self">
+			<input class="form-control" type="hidden" name="id" value="<?php echo $book[0]["id"]; ?>">
+			<input class="btn btn-dark" type="submit" value="Delete">
+		</div>
 		</fieldset>
 	</form>
 <?php

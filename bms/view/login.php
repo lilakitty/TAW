@@ -12,17 +12,21 @@
 	<form method="post">
 		<fieldset>
 			<legend>Login Form</legend>
+			<div class="col-md-2">
+			<div class="form-group">
 			<label for="username">Username</label>
-			<input type="text" name="username" id="username" value="<?php echo $_REQUEST["username"]; ?>">
+			<input class="form-control" type="text" name="username" id="username" value="<?php echo $_REQUEST["username"]; ?>">
 			<font color="red"><?php echo $errors["username"]; ?></font>
-			<br>
+			</div>
+			<div class="form-group">
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password">
+			<input class="form-control" type="password" name="password" id="password">
 			<font color="red"><?php echo $errors["password"]; ?></font>
-			<br>
-			<input type="hidden" name="page" value="login">
-			<input type="hidden" name="caller" value="self">
-			<input type="submit" value="Sign In">
+			</div>
+			<input class="form-control" type="hidden" name="page" value="login">
+			<input class="form-control" type="hidden" name="caller" value="self">
+			<input class="btn btn-dark" type="submit" value="Sign In">
+		</div>
 		</fieldset>
 	</form>
 <?php

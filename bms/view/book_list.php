@@ -6,14 +6,16 @@
 		include_once "menu.php";
 ?>
 
-		<table border="1" width="50%" align="center">
+		<table class="table" border="1" width="50%" align="center">
+			 <thead class="thead-dark">
 			<tr>
-				<th>Title</th>
-				<th>Author</th>
-				<th>Description</th>
-				<th>Edit</th>
-				<th>Delete</th>
+				<th scope="col">Title</th>
+				<th scope="col">Author</th>
+				<th scope="col">Description</th>
+				<th scope="col">Edit</th>
+				<th scope="col">Delete</th>
 			</tr>
+		</thead>
 <?php
 		foreach($books as $book)
 		{
@@ -22,8 +24,8 @@
 				<td><?php echo $book["title"]; ?></th>
 				<td><?php echo $book["author"]; ?></th>
 				<td><?php echo $book["description"]; ?></th>
-				<td><a href="index.php?page=book_edit&id=<?php echo $book["id"]; ?>">Edit</a></th>
-				<td><a href="index.php?page=book_delete&id=<?php echo $book["id"]; ?>">Delete</a></th>
+				<td><a  class="btn btn-success" role="button" href="index.php?page=book_edit&id=<?php echo $book["id"]; ?>">Edit</a></th>
+				<td><a class="btn btn-danger" role="button" href="index.php?page=book_delete&id=<?php echo $book["id"]; ?>">Delete</a></th>
 			</tr>
 <?php
 		}
