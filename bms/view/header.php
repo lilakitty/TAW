@@ -3,9 +3,48 @@
 		<!--<link rel="stylesheet" href="view/css/style.css">
 		<script src="view/js/jquery-3.2.1.min.js"></script>
 		<script src="view/js/script.js"></script>-->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		 <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            
+		<link href="https://fonts.googleapis.com/css?family=Anton|Oswald" rel="stylesheet">
 	</head>
+
+	<style>
+
+	.formulario{
+		padding-left: 350px;
+	}
+
+	.formularioBoton{
+		padding-left:260px;
+	}
+
+	.tituloFormulario{
+		padding-left: 210px;
+		font-size: 25px;
+		font-family: 'Oswald', sans-serif;
+		color:;
+	}
+
+	.tabla{
+		padding-left:290px;
+	}
+
+
+	.titulos{
+		font-family: 'Anton', sans-serif;
+		color:#ec407a ;
+		text-align: center;
+		
+
+	}
+
+
+
+
+	</style>
 	<body>

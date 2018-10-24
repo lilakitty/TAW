@@ -9,42 +9,53 @@
 	{
 ?>
 
+  <div class="titulos">
+    <h3>Please fill up the following form to register yourself</h3>
+  </div>
+<div class="formulario">
+  <div class="row">
+    <form class="col s8" method="post">
+      <fieldset>
+      <div class="row">
+        <div class="nput-field col s12">
+          <div class="tituloFormulario">Registration Form</div>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" value="<?php echo $_REQUEST["name"]; ?>">
+          <font color="red"><?php echo $errors["name"]; ?></font>
+        </div>
+      </div>
+      <div class="row">
+        <div class="nput-field col s12">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" value="<?php echo $_REQUEST["username"]; ?>">
+          <font color="red"><?php echo $errors["username"]; ?></font>
+        </div>
+      </div>
+      <div class="row">
+        <div class="nput-field col s12">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password">
+          <font color="red"><?php echo $errors["password"]; ?></font>
+        </div>
+      </div>
+        <input type="hidden" name="page" value="register">
+        <input type="hidden" name="caller" value="self">
+        <div class="formularioBoton"><button class="waves-effect waves-light btn-small pink lighten-1" type="submit" name="action">Sign Up</button></div>
+      </fieldset>
+    </form>
+  </div>
+</div>
 	
-	
-	<h3>Please fill up the following form to register yourself</h3>
-	<form method="post">
-		<fieldset>
-			<legend>Registration Form</legend>
-		
-    		<div class="col-md-2">
-			<div class="form-group">
-			<label for="name">Name</label>
-			<input class="form-control" type="text" name="name" id="name" value="<?php echo $_REQUEST["name"]; ?>">
-			<font color="red"><?php echo $errors["name"]; ?></font>
-			</div>
-			<div class="form-group">
-			<label for="username">Username</label>
-			<input class="form-control" type="text" name="username" id="username" value="<?php echo $_REQUEST["username"]; ?>">
-			<font color="red"><?php echo $errors["username"]; ?></font>
-			</div>
-			<div class="form-group">
-			<label for="password">Password</label>
-			<input class="form-control" type="password" name="password" id="password">
-			<font color="red"><?php echo $errors["password"]; ?></font>
-			</div>
-			<input class="form-control" type="hidden" name="page" value="register">
-			<input class="form-control" type="hidden" name="caller" value="self">
-			<input class="btn btn-dark" type="submit" value="Sign Up">
-		</fieldset>
-	</form>
-	</div>
+
 	
 <?php
 	}
 	else
 	{
 ?>
+<div class="titulos">
 		<h3>Registration Successful</h3>
+  </div>
 <?php
 	}
 ?>

@@ -1,6 +1,6 @@
 <?php
 	$db_server="localhost";
-	$db_username="admin";
-	$db_password="AVILA2597";
+	$db_username="root";
+	$db_password="";
 	$db_name="bms";
 ?>
